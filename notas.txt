@@ -4,5 +4,5 @@ source ecomerce/scripts/activate /*activar entorno*/
 
 pip freeze /*conocer las dependencias que tengo instaladas*/
 
-pip 
+pip install -r requirements.txt /*instalar dependencias del protecto*/
 
