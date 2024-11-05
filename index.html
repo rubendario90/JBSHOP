@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Headphones Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header Section -->
+  <header class="bg-gray-900 text-white py-2 px-4 flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
+    <div class="mb-2 sm:mb-0">
+      <a href="tel:+001234567890" class="text-white">+001234567890</a>
+      <span class="mx-2 hidden sm:inline">|</span>
+      <span>
+        Obtenga hasta un 50% de descuento en productos seleccionados</span>
+      <a href="#" class="text-green-400 ml-2">Compra ahora</a>
+    </div>
+    <div class="flex space-x-2">
+      <select class="bg-gray-900 text-white border-0">
+        <option>Eng</option>
+        <option>Esp</option>
+      </select>
+      <select class="bg-gray-900 text-white border-0">
+        <option>Location</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+ <!-- Navbar -->
+<nav class="bg-white shadow-md py-4">
+    <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+      <a class="text-2xl font-bold text-green-500 mb-4 sm:mb-0" href="#">Shopcart</a>
+      <ul class="flex flex-wrap justify-center sm:justify-start space-x-4 mb-4 sm:mb-0 text-gray-700 relative">
+        <!-- Categories with Dropdown -->
+        <li class="relative">
+          <button id="dropdownButton" data-dropdown-toggle="dropdownMenu" class="hover:text-green-500 focus:outline-none">
+            Categorias
+          </button>
+          <!-- Dropdown Menu -->
+          <div id="dropdownMenu" class="hidden z-10 bg-white divide-y divide-gray-100 rounded shadow w-44">
+            <ul class="py-1 text-gray-700">
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Rines</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Llantas</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">#</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">#</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="hover:text-green-500">Ofertas</a></li>
+        <li><a href="#" class="hover:text-green-500">
+            Qué hay de nuevo?</a></li>
+        <li><a href="#" class="hover:text-green-500">Entrega</a></li>
+      </ul>
+      <div class="flex items-center w-full sm:w-auto">
+        <input type="text" placeholder="Search Product" class="border border-gray-300 p-2 rounded-l-md w-full sm:w-auto">
+        <button class="bg-green-500 text-white p-2 rounded-r-md">Search</button>
+      </div>
+      <div class="flex space-x-4 mt-4 sm:mt-0">
+        <a href="#" class="text-gray-700 hover:text-green-500">Mi Cuenta</a>
+        <a href="#" class="text-gray-700 hover:text-green-500">Carrito</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner Section -->
+  <section class="container mx-auto my-8 px-4">
+    <div class="bg-green-100 p-8 rounded-lg text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-700">Obtenga hasta un 50% de descuento en productos seleccionados</h2>
+      <button class="bg-green-500 text-white px-4 py-2 rounded mt-4">Comprar Ahora</button>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="container mx-auto mb-8 px-4 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+    <div class="flex flex-wrap justify-center sm:justify-start space-x-2">
+      <button class="border border-gray-300 px-3 py-1 rounded-md text-gray-700">Headphone Type</button>
+      <button class="border border-gray-300 px-3 py-1 rounded-md text-gray-700">Price</button>
+      <button class="border border-gray-300 px-3 py-1 rounded-md text-gray-700">Review</button>
+      <button class="border border-gray-300 px-3 py-1 rounded-md text-gray-700">Color</button>
+      <button class="border border-gray-300 px-3 py-1 rounded-md text-gray-700">Material</button>
+      <button class="border border-gray-300 px-3 py-1 rounded-md text-gray-700">Offer</button>
+      <button class="border border-gray-300 px-3 py-1 rounded-md text-gray-700">All Filters</button>
+    </div>
+    <select class="border border-gray-300 px-3 py-1 rounded-md text-gray-700 mt-4 sm:mt-0">
+      <option>Sort by</option>
+    </select>
+  </section>
+
+  <!-- Product Section -->
+  <section class="container mx-auto mb-12 px-4">
+    <h3 class="text-2xl font-semibold mb-6 text-gray-700 text-center sm:text-left">Headphones For You!</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Product Card 1 -->
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="img/headphone1.jpg" alt="Wireless Earbuds" class="w-full h-40 object-cover rounded-md mb-4">
+        <h4 class="text-lg font-semibold">Wireless Earbuds, IPX8</h4>
+        <p class="text-green-500 font-bold mt-2">$89.00</p>
+        <button class="bg-green-500 text-white w-full py-2 rounded mt-4">Add to Cart</button>
+      </div>
+      <!-- Product Card 2 -->
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="img/headphone2.jpg" alt="AirPods Max" class="w-full h-40 object-cover rounded-md mb-4">
+        <h4 class="text-lg font-semibold">AirPods Max</h4>
+        <p class="text-green-500 font-bold mt-2">$559.00</p>
+        <button class="bg-green-500 text-white w-full py-2 rounded mt-4">Add to Cart</button>
+      </div>
+      <!-- Product Card 3 -->
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="img/headphone3.jpg" alt="Bose BT Earphones" class="w-full h-40 object-cover rounded-md mb-4">
+        <h4 class="text-lg font-semibold">Bose BT Earphones</h4>
+        <p class="text-green-500 font-bold mt-2">$288.00</p>
+        <button class="bg-green-500 text-white w-full py-2 rounded mt-4">Add to Cart</button>
+      </div>
+      <!-- Product Card 4 -->
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="img/headphone4.jpg" alt="VIVEFOX Headphones" class="w-full h-40 object-cover rounded-md mb-4">
+        <h4 class="text-lg font-semibold">VIVEFOX Headphones</h4>
+        <p class="text-green-500 font-bold mt-2">$39.00</p>
+        <button class="bg-green-500 text-white w-full py-2 rounded mt-4">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-4">
+    <p>© 2024 Shopcart. All rights reserved.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>
